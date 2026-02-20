@@ -1,0 +1,54 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Score Smart IELTS Academy | Achieve Band 7+",
+  description:
+    "Expert-led IELTS preparation with proven strategies. Get personalized coaching and achieve your target band score.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/favicon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/favicon.png",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        {children}
+        <FloatingWhatsAppButton />
+
+        <Script
+  id="meta-pixel"
+  strategy="afterInteractive"
+>
+{`
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)n=f.fbq;
+  n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}
+  (window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1263975938438843');
+  fbq('track', 'PageView');
+`}
+</Script>
+      </body>
+    </html>
+  );
+}
