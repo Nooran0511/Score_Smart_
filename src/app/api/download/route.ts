@@ -54,11 +54,11 @@ export async function GET() {
   });
 
  return new NextResponse(new Uint8Array(buffer), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/zip",
-      "Content-Disposition": 'attachment; filename="score-smart-website.zip"',
-      "Content-Length": buffer.length.toString(),
-    },
-  });
+  status: 200,
+  headers: {
+    "Content-Type": "application/zip",
+    "Content-Disposition": 'attachment; filename="score-smart-website.zip"',
+    "Content-Length": buffer.length.toString(),
+  },
+});
 }
