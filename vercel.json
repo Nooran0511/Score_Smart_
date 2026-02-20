@@ -5,6 +5,6 @@
   "framework": "nextjs",
   "regions": ["iad1"],
   "env": {
-    "NEXT_PUBLIC_WHATSAPP_PHONE": "@whatsapp_phone"
+    "NEXT_PUBLIC_WHATSAPP_PHONE": "923158999139"
   }
 }
