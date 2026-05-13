@@ -110,9 +110,14 @@ const Testimonials = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#F8FAFC]/50 border border-[#E2E8F0] rounded-full">
             <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-[#E2E8F0] overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-slate-200 to-slate-300"></div>
+              {[
+                { initials: "SA", bg: "bg-[#4F46E5]" },
+                { initials: "AK", bg: "bg-[#3B82F6]" },
+                { initials: "FR", bg: "bg-[#10B981]" },
+                { initials: "MN", bg: "bg-[#F59E0B]" },
+              ].map((avatar, i) => (
+                <div key={i} className={`w-8 h-8 rounded-full border-2 border-white ${avatar.bg} flex items-center justify-center`}>
+                  <span className="text-white text-[10px] font-bold leading-none">{avatar.initials}</span>
                 </div>
               ))}
             </div>

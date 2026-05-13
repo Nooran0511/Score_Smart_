@@ -150,6 +150,7 @@ Message: ${formData.message}`;
                 >
                   <option value="">Select course</option>
                   <option value="4-Week Complete Program">4-Week Complete Program</option>
+                  <option value="14-days Crash program">14-days Crash program</option>
                   <option value="5-Day Speaking Crash Course">5-Day Speaking Crash Course</option>
                   <option value="Evaluation and Personalized Plan">Evaluation and Personalized Plan</option>
                 </select>

@@ -293,6 +293,7 @@
     @apply transition-transform duration-300 hover:scale-105 hover:-translate-y-1;
   }
 
+
   /* Animation utilities */
   .animate-pulse {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;

@@ -30,6 +30,7 @@ const AboutCoach = () => {
                 fill
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                 priority
+                unoptimized
               />
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
